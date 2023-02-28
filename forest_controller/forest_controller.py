@@ -31,28 +31,28 @@ while (robot.step(timestep) !=-1):
     key_pressed= keyboard.getKey()
     print(key_pressed)
     
-    # front movement - press up arrow key
+    # front movement 
     if(key_pressed== 315):
         wheel1.setVelocity(speed)
         wheel2.setVelocity(speed)
         wheel3.setVelocity(speed)
         wheel4.setVelocity(speed)
         
-    # back movement - press down arrow key   
+    # back movement 
     if(key_pressed== 317):
         wheel1.setVelocity(-speed)
         wheel2.setVelocity(-speed)
         wheel3.setVelocity(-speed)
         wheel4.setVelocity(-speed)
     
-    # left movement - press left arrow key      
+    # left movement  
     if(key_pressed== 314):
         wheel1.setVelocity(-speed)
         wheel2.setVelocity(speed)
         wheel3.setVelocity(-speed)
         wheel4.setVelocity(speed)
     
-    # right movement - press right arrow key     
+    # right movement  
     if(key_pressed== 316):
         wheel1.setVelocity(speed)
         wheel2.setVelocity(-speed)
