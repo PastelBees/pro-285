@@ -10,8 +10,8 @@ TexturedBackground {
 TexturedBackgroundLight {
 }
 Robot {
-  translation 3.118929885553658 -3.1417242798234994 4.0342039170572415
-  rotation 0.08698966979350231 0.011412181886324105 -0.996143844760289 1.4783333860514822
+  translation 3.118967651268014 -3.141682473215526 4.034213096695037
+  rotation 0.08699053576866275 0.011411712331158628 -0.9961437745166869 1.4783325210262932
   children [
     DEF base Shape {
       appearance PaintedWood {
@@ -23,7 +23,7 @@ Robot {
     }
     DEF wheel1 HingeJoint {
       jointParameters HingeJointParameters {
-        position -20.727783478608558
+        position -20.727783344779496
         anchor 0.75 -0.96 -0.53
       }
       device [
@@ -34,7 +34,7 @@ Robot {
       ]
       endPoint Solid {
         translation 0.75 -0.96 -0.53
-        rotation 0.6280237449877132 -0.4595265922930283 0.6280298453952363 4.0030827606178825
+        rotation 0.6280237263666804 -0.45952664319125025 0.6280298267740875 4.003082844665709
         children [
           DEF wheel Shape {
             appearance Rubber {
@@ -49,13 +49,11 @@ Robot {
         physics DEF phy1 Physics {
           mass 1
         }
-        linearVelocity -1.2655388856216156e-05 -1.2258511827761679e-05 -2.1492681540272467e-06
-        angularVelocity 1.6110692882498856e-07 -1.9436811267984863e-09 -8.254164650015525e-08
       }
     }
     DEF wheel2 HingeJoint {
       jointParameters HingeJointParameters {
-        position -45.16469647343462
+        position -45.16472397985498
         anchor -0.75 -0.96 -0.53
       }
       device [
@@ -66,7 +64,7 @@ Robot {
       ]
       endPoint Solid {
         translation -0.75 -0.96 -0.53
-        rotation 0.4868411129805704 -0.7252354767897373 0.4868462117726725 4.396509802441162
+        rotation 0.48684872308752514 -0.7252252594143912 0.4868538219377305 4.396496411080193
         children [
           DEF wheel Shape {
             appearance Rubber {
@@ -80,13 +78,11 @@ Robot {
         name "solid(1)"
         boundingObject USE wheel
         physics USE phy1
-        linearVelocity -1.253120810548577e-05 -1.2269071960331737e-05 -1.9105363066947906e-06
-        angularVelocity 1.0672187483946432e-06 -9.0585772103729e-06 -9.052306532692102e-07
       }
     }
     DEF wheel3 HingeJoint {
       jointParameters HingeJointParameters {
-        position -30.51904509958073
+        position -30.519069569943607
         anchor 0.75 0.96 -0.53
       }
       device [
@@ -97,7 +93,7 @@ Robot {
       ]
       endPoint Solid {
         translation 0.75 0.96 -0.53
-        rotation -0.39778120051382426 -0.826763599950146 -0.39778394426529495 4.523280376043565
+        rotation -0.3977726855059183 -0.826771793551205 -0.3977754291727099 4.523290109789705
         children [
           DEF wheel Shape {
             appearance Rubber {
@@ -111,13 +107,11 @@ Robot {
         name "solid(2)"
         boundingObject USE wheel
         physics USE phy1
-        linearVelocity -1.2642727165536292e-05 -1.2438290986789725e-05 -2.11718080606695e-06
-        angularVelocity 1.077701481643446e-06 -9.152247834413073e-06 -9.137406131675617e-07
       }
     }
     DEF wheel4 HingeJoint {
       jointParameters HingeJointParameters {
-        position -49.858865375453504
+        position -49.8588653754541
         anchor -0.75 0.96 -0.53
       }
       device [
@@ -128,7 +122,7 @@ Robot {
       ]
       endPoint Solid {
         translation -0.75 0.96 -0.53
-        rotation 0.19791635167639057 0.960030162412252 0.197917167011384 1.6115847749557604
+        rotation 0.1979163516762554 0.9600301624123081 0.19791716701124804 1.6115847749557068
         children [
           DEF wheel Shape {
             appearance Rubber {
@@ -142,16 +136,12 @@ Robot {
         name "solid(3)"
         boundingObject USE wheel
         physics USE phy1
-        linearVelocity -1.2518570487610347e-05 -1.2448892106935054e-05 -1.878054932944568e-06
-        angularVelocity 1.6105783230737363e-07 -1.941433764907141e-09 -8.254451397057476e-08
       }
     }
   ]
   boundingObject USE base
   physics USE phy1
-  controller "forest_controller"
-  linearVelocity -1.2592236078142972e-05 -1.243551164132839e-05 -2.0221043271249075e-06
-  angularVelocity 1.6105780004240385e-07 -1.9414391718653143e-09 -8.254451829608741e-08
+  controller ""
 }
 DEF forest Solid {
   children [
